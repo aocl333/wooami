@@ -1,0 +1,253 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&subset=korean');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,900');
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+
+/*main-visual*/
+#main-visual {
+    position: relative; 
+    width: 100%; 
+    height: 620px; 
+    overflow: hidden;
+}
+#main-visual div.box {
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
+    width: 1920px; 
+    height: 100%;
+}
+#main-visual div ul.slide {
+    position: absolute; 
+    width: 100%; 
+    height: 100%;}
+#main-visual div ul.slide li {
+    display: none; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%;}
+#main-visual div ul.slide li:first-child {display: block;}
+#main-visual div ul.slide li a {
+    display: block;}
+#main-visual ul.indicator {
+    position: absolute; 
+    bottom: 35px; 
+    width: 100%; 
+    text-align: center;
+}
+#main-visual ul.indicator li {
+    display: inline-block;
+}
+#main-visual ul.indicator li + li {
+    margin-left: 5px;
+}
+#main-visual ul.indicator li a {
+    display: block; 
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid #ddd; 
+    border-radius: 50px;
+    background: #fff; 
+    text-indent: -9999px; 
+    overflow: hidden;
+}
+#main-visual ul.indicator li.on a 
+{
+    background: #ddd;
+}
+#main-visual a.play {
+    position: absolute; 
+    bottom: 36px; 
+    left: calc(50% + 50px); 
+    transform: translate(-50%, 0); 
+    color: #ddd;
+}
+#main-visual a.play i.fa-pause {
+    display: none;
+}
+#main-visual a.play i.fa-play {
+    display: inline-block;
+}
+#main-visual a.play.on i.fa-pause {
+    display: inline-block;
+}
+#main-visual a.play.on i.fa-play {
+    display: none;
+}
+#main-visual a.prev {
+    position: absolute; 
+    top: 50%; 
+    left: 10px; 
+    transform: translate(0, -50%);}
+#main-visual a.next {
+    position: absolute; 
+    top: 50%; 
+    right: 10px; 
+    transform: translate(0, -50%);}
+
+
+/*mainCon01*/
+.mainCon01{
+    padding-top:50px;
+}
+.con01-title{
+    border-bottom: 1px solid #ced0d1;
+    padding:10px 0;
+    margin-bottom: 35px;
+    font-size: 0;
+}
+.con01-title h2{
+    font-size:22px;
+    display: inline-block;
+    vertical-align:middle;
+}
+.con01-title span{
+    position:relative;
+    font-size:13px;
+    color: #b5b5b5;
+    margin-left: 10px;
+    top:7px;
+}
+.con01-title .tab{
+    position:relative;
+    float:right;
+    color:#888888;
+    top:20px;
+    font-size:12px;
+}
+.con01-title .tab:hover{
+    color:#333;
+}
+.con01{
+    float:left;
+    margin-right:26px;
+    padding-bottom:100px;
+}
+.con01:last-child{
+    margin-right:0;
+}
+.con01 img:hover{
+    opacity: 0.7;
+    transition: all 0.4s ease-out;
+}
+.con01 p{
+    font-size:15px;
+    padding-top:20px;
+    margin-bottom:10px;
+}
+.con01 span{
+    color:#333;
+    font-weight:bold;
+}
+.con01 .price{
+    color:#aaaaaa;
+    font-weight:normal;
+    padding-left:10px;
+    text-decoration: line-through;
+}
+
+/*mainCon02*/
+.mainCon02{}
+.evevt_area01{
+    float:left;
+}
+.evevt_area01 img:hover{
+    opacity: 0.7;
+    transition: all 0.4s ease-out;
+}
+.evevt_area02{}
+.pdtList a{
+    display:flex;
+}
+.pdtimg{
+    height:260px;
+}
+.pdtimg:hover{
+    opacity: 0.7;
+    transition: all 0.4s ease-out;
+}
+.pdtText{
+    width:260px;
+    height:260px;
+    background:#F5F5F5;
+    text-align:center;
+    box-sizing:border-box;
+    color:#333;
+}
+.pdtText li{
+    position:relative;
+    top:30%;
+}
+.pdtText .name{
+    padding-bottom:10px;
+    font-size:14px;
+    
+}
+.pdtText .special_text{
+    padding-bottom:15px;
+    color:#bbb;
+    font-size:14px;
+    
+}
+.pdtList span{
+    color:#333;
+    font-weight:bold;
+}
+.pdtList .price{
+    color:#aaaaaa;
+    font-weight:normal;
+    padding-left:10px;
+    text-decoration: line-through;
+}
+
+/*mainCon03*/
+.mainCon03{
+    padding-top:50px;
+}
+.con03{
+    float:left;
+    margin-right:26px;
+    padding-bottom:100px;
+}
+.con03:nth-child(5){
+    margin-right:0;
+}
+.con03:nth-child(9){
+    margin-right:0;
+}
+.con03 img:hover{
+    opacity: 0.7;
+    transition: all 0.4s ease-out;
+}
+.con03 p{
+    font-size:15px;
+    padding-top:20px;
+    margin-bottom:10px;
+}
+.con03 span{
+    color:#333;
+    font-weight:bold;
+}
+.con03 .price{
+    color:#aaaaaa;
+    font-weight:normal;
+    padding-left:10px;
+    text-decoration: line-through;
+}
+
+/*mainCon04*/
+.mainCon04 h1{
+    text-align:center;
+    padding-top:100px;
+    padding-bottom:40px;
+}
+.con04{
+    text-align:center;
+}
+.con04 img:hover{
+    opacity: 0.7;
+    transition: all 0.4s ease-out;
+}
+
